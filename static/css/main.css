@@ -1,106 +1,166 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto/Roboto-Regular-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src:
+    url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Regular-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2'),
-        url('../fonts/Roboto/Roboto-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src:
+    url("../fonts/Roboto/Roboto-Italic.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 * {
-font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
 /* Page Setup for Styling */
 
-html, body{
-    box-sizing: border-box;
-    height: 100%;
-    margin: 0;
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-.header-nav, .footer{
-    flex-shrink: 0;
-    background-color: #1F2937;
+.header-nav,
+.footer {
+  flex-shrink: 0;
+  background-color: #1f2937;
 }
 
-.content{
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.footer{
-    height: 40px;
-    padding: 10px;
-    text-align: center;
+.footer {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .content > div {
-    flex: 1;
+  flex: 1;
 }
 
 /* main styling starts here */
 
 /* header navbar */
-.header-nav{
-    display: flex;
-    padding: 8px;
+.header-nav {
+  display: flex;
+  padding: 8px;
+  height: 60px;
 }
 
-.logo{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;  
+.logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.nav-items{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+.nav-items {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 /* header content */
 
-.content-header{
-    background-color: #1F2937;
-    color: #E5E7EB;
+/* content-header parent div */
+.content-header {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  padding: 48px;
+  display: flex;
+  gap: 128px;
+}
+
+/* .content-header-1 div and .content-header-2 div */
+.content-header > * {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* content-header-1 child div and items within */
+
+.content-header-1 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: center;
+  padding: 0 25%;
+}
+
+.content-header-1 > div p {
+  margin: 0;
+  padding: 0;
+}
+
+#header-signup {
+  margin-top: 4px;
+}
+
+/* content-header-2 child div and items within */
+
+.content-header-2 > div {
+  display: flex;
+}
+
+.content-header-2 > div img {
+  width: 550px;
+  object-fit: contain;
+}
+
+/* General Styles */
+
+button {
+  cursor: pointer;
+  background-color: #3882f6;
+  color: #f9faf8;
+  width: 90px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 9px;
+  font-weight: 900;
 }
 
 /* Font and Text */
 
-.main-text{
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
+.main-text {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
 }
 
-.secondary-text, .nav-items li a{ 
-    font-size: 18px;
-    color: #E5E7EB;
-    text-decoration: none;
+.secondary-text,
+.nav-items li a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
 }
 
-.logo-text{
-    font-size: 24px;
-    color: #F9FAF8;
+.logo-text {
+  font-size: 24px;
+  color: #f9faf8;
 }

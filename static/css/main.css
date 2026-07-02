@@ -163,6 +163,11 @@ body {
   border-radius: 12px;
 }
 
+@media (max-width: 750px) {
+  .content-header {
+    flex-direction: column;
+  }
+}
 /* General Styles */
 
 button {

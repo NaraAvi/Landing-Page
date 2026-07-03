@@ -28,6 +28,7 @@ html,
 body {
   box-sizing: border-box;
   height: 100dvh;
+  max-width: 100%;
   margin: 0;
 }
 
@@ -51,7 +52,7 @@ body {
 
 .footer {
   display: flex;
-  height: 60px;
+  height: 62px;
   justify-content: center;
   align-items: center;
 }
@@ -105,6 +106,7 @@ body {
 /* content-header-1 child div and items within */
 
 .content-header-1 > div {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -167,17 +169,90 @@ body {
   .content-header {
     flex-direction: column;
   }
+
+  .content-header-1 > div {
+    padding: 0 5%;
+  }
+
+  .header-nav {
+    height: 75px;
+  }
 }
+
+.content-3 {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e7eb;
+  padding: 3rem 0;
+}
+
+.content-3 > div {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .content-3 > div {
+    padding: 1rem;
+  }
+}
+
+.content-3 > div > p {
+  margin: 0;
+  padding: 0;
+}
+
+#quote-author {
+  align-self: flex-end;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.content-4 {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.content-4 > div {
+  flex: 1;
+  max-width: 80rem;
+  gap: 2rem;
+  display: flex;
+  background-color: #3882f6;
+  border-radius: 9px;
+  padding: 2em 1rem;
+  justify-content: space-around;
+}
+
+#Call-To-Action-Banner-Text > * {
+  margin: 0;
+  padding: 0;
+  color: #e5e7eb;
+}
+
+#Call-To-Action-Banner-Button {
+  justify-self: center;
+  align-self: center;
+  border-color: #f9faf8;
+
+  padding: 5px;
+}
+
 /* General Styles */
 
 button {
+  flex: 0 0 auto;
   cursor: pointer;
   background-color: #3882f6;
   color: #f9faf8;
-  width: 90px;
+  width: 8em;
   height: 35px;
   padding: 10px;
-  border-radius: 9px;
+  border-radius: 8px;
   font-weight: 900;
 }
 
@@ -208,8 +283,21 @@ button {
   color: #f9faf8;
 }
 
+.secondary-text-head {
+  font-size: 24px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
 .info-header-text {
   font-size: 36px;
   color: #1f2937;
   font-weight: 900;
+}
+
+.quote-text {
+  font-size: 24px;
+  color: #1f2937;
+  font-weight: 300;
+  font-style: italic;
 }
